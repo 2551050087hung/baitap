@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ | Oxford Nhà Bè University</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../input.css">
+
+  <style>
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="bg-blue-100 backdrop-blur">
+    <nav class="nav">
+      <a href="../index.html" class="logo">OXFORD NHÀ BÈ</a>
+
+      <button type="button" class="hb-toggle" aria-controls="mainMenu" aria-expanded="false" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu hb-menu" id="mainMenu">
+        <li><a href="../index.html" class="nav">Trang chủ</a></li>
+        <li><a href="./nganhhoc.html" class="nav">Ngành học</a></li>
+        <li><a href="./nghiencuu.html" class="nav">Nghiên cứu</a></li>
+        <li><a href="./lienhe.html" class="nav">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <div class="hb-overlay"></div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Liên hệ với chúng tôi</h1>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <main class="contact-section">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Thông tin liên hệ</h2>
+        <p>Hãy liên hệ với Oxford Nhà Bè University khi bạn cần hỗ trợ.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- CONTACT INFORMATION -->
+        <section class="card">
+          <h3>Thông tin trường</h3>
+
+          <div class="info-item">
+            <div class="icon">📍</div>
+            <div>
+              <strong>Địa chỉ</strong>
+              <span>123 Đường Đại Học, Huyện Nhà Bè, TP. Hồ Chí Minh</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">☎</div>
+            <div>
+              <strong>Điện thoại</strong>
+              <span>028 1234 5678</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">✉</div>
+            <div>
+              <strong>Email</strong>
+              <span>contact@oxfordnhabe.edu.vn</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">⏰</div>
+            <div>
+              <strong>Giờ làm việc</strong>
+              <span>Thứ Hai – Thứ Sáu: 07:30 – 17:00</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">🎓</div>
+            <div>
+              <strong>Phòng tuyển sinh</strong>
+              <span>028 1234 8899</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="card">
+          <h3>Gửi tin nhắn cho chúng tôi</h3>
+
+          <form id="contactForm">
+
+            <div class="form-row">
+              <div>
+                <label for="name">Họ và tên</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nhập họ và tên"
+                  required
+                >
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@email.com"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="phone">Số điện thoại</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Nhập số điện thoại"
+                >
+              </div>
+
+              <div>
+                <label for="topic">Chủ đề</label>
+                <select id="topic" name="topic">
+                  <option value="">Chọn chủ đề</option>
+                  <option>Tuyển sinh</option>
+                  <option>Ngành học</option>
+                  <option>Học phí</option>
+                  <option>Học bổng</option>
+                  <option>Hợp tác</option>
+                  <option>Khác</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="message">Nội dung</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Nhập nội dung bạn muốn gửi..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn">Gửi liên hệ</button>
+
+          </form>
+        </section>
+
+      </div>
+
+      <!-- MAP -->
+      <div class="map">
+        <div class="map-content">
+          <h3>📍 Cơ sở Oxford Nhà Bè University</h3>
+          <p>
+            123 Đường Đại Học, Huyện Nhà Bè, Thành phố Hồ Chí Minh
+          </p>
+          <p>Vui lòng liên hệ trước khi đến để được hướng dẫn.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <strong>Oxford Nhà Bè University</strong>
+        <p>Kiến tạo tri thức – Phát triển tương lai.</p>
+      </div>
+
+      <p>© 2026 Oxford Nhà Bè University. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../src/hamburger.js"></script>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+
+      if (name) {
+        alert("Cảm ơn " + name + "! Tin nhắn của bạn đã được ghi nhận.");
+        this.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
