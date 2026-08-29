@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eef7f8;
+  --color-brand-100: #d8eef1;
+  --color-brand-200: #b6dfe5;
+  --color-brand-500: #2ca3b8;
+  --color-brand-600: #239ab9;
+  --color-brand-700: #177a94;
+  --color-brand-900: #104f60;
+
+  --color-bg: #f7fbfc;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eef7f8;
+  --color-ink: #10202a;
+  --color-ink-secondary: #ffffff;
+  --color-muted: #64748b;
+  --color-border: #dbe6ea;
+  --color-line: #dbe6ea;
+  --color-success: #16a34a;
+  --color-danger: #dc2626;
+
+  --font-display: "Black Ops One", cursive;
+  --font-body: "Montserrat", system-ui, sans-serif;
+
+  --radius-card: 1.125rem;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+  }
+  ::selection {
+    background: var(--color-brand-600);
+    color: #fff;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-12;
+  }
+
+  .section {
+    @apply mx-auto w-full max-w-[1440px] px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-28;
+  }
+
+  .card {
+    border-radius: var(--radius-card);
+    @apply border border-border bg-surface p-6 shadow-sm transition-all duration-300;
+  }
+
+  .card:hover { @apply -translate-y-1 shadow-lg; }
+
+  .btn {
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-brand-600 text-white shadow-sm hover:bg-brand-700 hover:shadow-md active:scale-95;
+  }
+  
+  .soo {
+    @apply block text-2xl font-extrabold;
+  }
+
+  .chunho {
+    @apply text-xl text-muted;
+  }
+  .noidung {
+    @apply rounded-2xl border border-white/10 bg-white/5 p-6;
+  }
+  .mixi {
+    @apply mt-5 font-extrabold text-lg text-brand-600;
+  }
+  .qnt {
+    @apply mt-3 font-bold text-lg;
+  }
+  .fat {
+    @apply mt-3 text-sm leading-6 text-muted;
+  }
+  .ss {
+    @apply mt-2 text-sm leading-6 text-slate-400;
+  }
+
+  .btn-secondary {
+    @apply border border-border bg-white text-ink hover:border-brand-600 hover:text-brand-600 active:scale-95;
+  }
+
+  .btn-light {
+    @apply bg-white text-brand-700 hover:bg-brand-50 active:scale-95;
+  }
+
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.18em] text-brand-600;
+  }
+
+  .page-title {
+    @apply mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl;
+  }
+
+  .section-title {
+    @apply mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-border bg-white px-4 py-3 text-sm text-ink outline-none transition placeholder:text-muted focus:border-brand-600 focus:ring-4 focus:ring-brand-100;
+  }
+
+  .input.invalid {
+    @apply border-red-500 ring-4 ring-red-50;
+  }
+
+  .error-text {
+    @apply mt-1 hidden text-xs font-medium text-red-600;
+  }
+
+  .error-text.show { @apply block; }
+
+  .tab-btn {
+    @apply border-b-2 border-transparent px-4 py-3 text-sm font-semibold text-muted transition hover:text-brand-600;
+  }
+
+  .tab-btn.active {
+    @apply border-brand-600 text-brand-600;
+  }
+
+  .major-card {
+    @apply block rounded-2xl border border-border bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl;
+  }
+
+  .nav-link {
+    @apply text-sm font-semibold text-slate-600 transition hover:text-brand-600;
+  }
+
+  .nav-link.active { @apply text-brand-600; }
+
+  .mobile-menu.open { @apply block; }
+}
