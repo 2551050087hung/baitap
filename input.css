@@ -976,32 +976,23 @@ a {
 
 .major-grid {
     max-width: 1400px;
-
     margin: auto;
-
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
+    /* Tự động điều chỉnh số cột, tối thiểu 280px mỗi card */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 30px;
 }
-
-
 /* CARD */
 
 .major-card {
+    width: 100%;
+    min-width: 0; /* Ngăn chặn flex/grid con bị co quá mức */
     background: #ffffff;
-
     border: 1px solid #e5e7eb;
-
     border-radius: 14px;
-
     overflow: hidden;
-
     transition: 0.3s;
 }
-
 .major-card:hover {
     transform: translateY(-6px);
 
