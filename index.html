@@ -11,8 +11,10 @@
   <title>Trang chủ | Oxford Nhà Bè University</title>
 </head>
 <body>
-  <header class="sticky top-0 z-40 border-b border-line bg-surface/85 backdrop-blur">
-    <nav class="mx-auto flex max-w-6xl items-center justify-end px-5 py-4" aria-label="Điều hướng chính">
+  <header class="sticky top-0 z-40 border-b border-line bg-surface/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4" aria-label="Điều hướng chính">
+      <a href="./index.html" class="font-display text-lg text-brand-700 sm:text-xl">OXFORD NHÀ BÈ</a>
+
       <button
         type="button"
         class="hb-toggle"
@@ -23,14 +25,14 @@
         <span></span><span></span><span></span>
       </button>
 
-      <ul id="nav-mobile" class="hb-menu flex items-center gap-4 font-medium text-brand-700">
+      <ul id="nav-mobile" class="hb-menu flex items-center gap-6">
         <li><a href="./index.html#thanh-tuu" class="nav-link">Thành tựu</a></li>
-        <li><a href="./index.html#nganh-hoc" class="nav-link">Ngành học</a></li>
-        <li><a href="./index.html#khau-hieu" class="nav-link">Khẩu hiệu</a></li>
+        <li><a href="./pages/nganhhoc.html" class="nav-link">Ngành học</a></li>
         <li><a href="./pages/nghiencuu.html" class="nav-link">Nghiên cứu</a></li>
         <li><a href="./pages/cong-dong.html" class="nav-link">Cộng đồng</a></li>
         <li><a href="./pages/hocbong.html" class="nav-link">Học bổng</a></li>
         <li><a href="./pages/lienhe.html" class="nav-link">Liên hệ</a></li>
+        <li class="mt-2 sm:mt-0"><a href="./pages/lienhe.html" class="nav-login">Đăng nhập</a></li>
       </ul>
     </nav>
     <div class="hb-overlay"></div>
@@ -50,31 +52,40 @@
             </div>
 
         </section>
-<section class="overflow-hidden bg-gradient-to-br from-brand-50 via-white to-brand-100">
-  <div class="container-main grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
-    <div>
-      <p class="eyebrow">Oxford Nhà Bè University · Since 2000</p>
-      <h1 class="page-title">Học để <span class="text-brand-600">dẫn đầu</span>, nghiên cứu để tạo khác biệt.</h1>
-      <p class="mt-6 max-w-2xl text-lg leading-8 text-muted">Môi trường đại học hiện đại, thực tiễn và cởi mở, nơi người học được kết nối với tri thức, doanh nghiệp và cộng đồng.</p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="./pages/nganhhoc.html" class="btn btn-primary">Khám phá ngành học →</a>
-      </div>
-      <div class="mt-12 grid max-w-xl grid-cols-3 gap-4">
-        <div><strong class="soo">25+</strong><span class="chunho">Năm phát triển</span></div>
-        <div><strong class="soo">18000</strong><span class="chunho">Cựu sinh viên</span></div>
-        <div><strong class="soo">92%</strong><span class="chunho" >Có việc làm</span></div>
-      </div>
+<section class="relative isolate overflow-hidden">
+  <div class="absolute inset-0 -z-10">
+    <img
+      src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1600&q=85"
+      alt="Khuôn viên Oxford Nhà Bè University"
+      class="h-full w-full object-cover"
+    >
+    <div class="absolute inset-0 bg-slate-900/65"></div>
+  </div>
+
+  <div class="container-main flex min-h-[620px] flex-col justify-center py-24 text-white sm:py-32">
+    <p class="hero-eyebrow">Oxford Nhà Bè University · Since 2000</p>
+    <h1 class="mt-4 max-w-3xl font-display text-4xl leading-tight sm:text-5xl lg:text-6xl">
+      Tìm ra <span class="hl-gold">tương lai</span> của bạn ngay hôm nay!
+    </h1>
+    <p class="mt-6 max-w-xl text-lg leading-8 text-white/90">Cẩm nang toàn diện về các trường đại học — nơi bạn kết nối với tri thức, doanh nghiệp và cộng đồng.</p>
+    <div class="mt-9 flex flex-wrap gap-3">
+      <a href="./pages/nganhhoc.html" class="btn btn-gold">Khám phá ngành học →</a>
+      <a href="./pages/lienhe.html" class="btn border border-white/40 bg-white/10 text-white hover:bg-white/20">Đăng ký tư vấn</a>
     </div>
-    <div class="rounded-3xl bg-brand-900 p-8 text-white shadow-2xl lg:p-10">
-      <span class="badge bg-white/10 text-white">Admissions 2026</span>
-      <h2 class="mt-6 text-3xl font-extrabold">Sẵn sàng cho hành trình đại học của bạn?</h2>
-      <p class="mt-4 leading-7 text-brand-100">Chọn ngành, khám phá chương trình và gửi biểu mẫu đăng ký trực tuyến trong vài phút.</p>
-      <a href="./pages/lienhe.html" class="btn btn-light mt-8">FORM REGISTRATION</a>
-      <div class="mt-10 grid grid-cols-2 gap-4">
-        <div class="rounded-2xl bg-white/10 p-5"><b class="text-2xl">36</b><p class="mt-1 text-sm text-brand-100">Chương trình đào tạo</p></div>
-        <div class="rounded-2xl bg-white/10 p-5"><b class="text-2xl">120+</b><p class="mt-1 text-sm text-brand-100">Đối tác doanh nghiệp</p></div>
-      </div>
+    <div class="mt-14 grid max-w-xl grid-cols-3 gap-4">
+      <div><strong class="soo text-white">25+</strong><span class="chunho text-white/80">Năm phát triển</span></div>
+      <div><strong class="soo text-white">18000</strong><span class="chunho text-white/80">Cựu sinh viên</span></div>
+      <div><strong class="soo text-white">92%</strong><span class="chunho text-white/80">Có việc làm</span></div>
     </div>
+  </div>
+</section>
+
+<section class="border-b border-line bg-brand-900">
+  <div class="container-main grid gap-6 py-10 text-white sm:grid-cols-2 lg:grid-cols-4">
+    <div class="rounded-2xl bg-white/10 p-5"><b class="text-2xl">36</b><p class="mt-1 text-sm text-brand-100">Chương trình đào tạo</p></div>
+    <div class="rounded-2xl bg-white/10 p-5"><b class="text-2xl">120+</b><p class="mt-1 text-sm text-brand-100">Đối tác doanh nghiệp</p></div>
+    <div class="rounded-2xl bg-white/10 p-5"><b class="text-2xl">2026</b><p class="mt-1 text-sm text-brand-100">Đợt tuyển sinh mở</p></div>
+    <div class="rounded-2xl bg-white/10 p-5"><a href="./pages/lienhe.html" class="btn btn-gold w-full">FORM REGISTRATION</a></div>
   </div>
 </section>
 

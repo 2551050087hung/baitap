@@ -2,11 +2,15 @@
 // Xử lý mở/đóng menu mobile khi bấm nút hamburger
 document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.querySelector('.hb-toggle');
-  const menu = document.getElementById('nav-mobile');
+  if (!toggle) return; // không tìm thấy nút hamburger -> thoát an toàn
+
+  // Lấy đúng menu mà nút này điều khiển (mỗi trang có thể đặt id khác nhau)
+  const menuId = toggle.getAttribute('aria-controls');
+  const menu = (menuId && document.getElementById(menuId)) || document.querySelector('.hb-menu');
   const overlay = document.querySelector('.hb-overlay');
   const body = document.body;
 
-  if (!toggle || !menu) return; // không tìm thấy phần tử -> thoát an toàn
+  if (!menu) return; // không tìm thấy phần tử -> thoát an toàn
 
   function openMenu() {
     toggle.classList.add('is-open');

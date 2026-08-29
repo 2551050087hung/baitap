@@ -9,27 +9,36 @@
 </head>
 <body>
 <header class="topbar">
+  <a class="brand" href="../index.html">OXFORD NHÀ BÈ</a>
+  <span class="badge">CỘNG ĐỒNG</span>
+  <button type="button" class="hb-toggle" aria-controls="nav-mobile" aria-expanded="false" aria-label="Mở menu">
+    <span></span><span></span><span></span>
+  </button>
   <ul
         id="nav-mobile"
-        class="hb-menu flex items-center gap-4 font-medium text-brand-700">
+        class="hb-menu flex items-center gap-4 font-medium text-brand-700"
+        style="margin-left:auto;display:flex;gap:16px;list-style:none;align-items:center">
 
         <li>
           <a href="../index.html" class="nav-link">
             Trang chủ
           </a>
         </li>
+        <li><a href="./lienhe.html" class="nav-login-link">Đăng nhập</a></li>
+        <li><a href="./lienhe.html" class="btn-signup-gold">Đăng ký</a></li>
   </ul>
-  <a class="brand" href="#">OXFORD NHÀ BÈ</a>
-  <span class="badge">CỘNG ĐỒNG</span>
+  <div class="hb-overlay"></div>
 </header>
 
-<main class="container">
-  <section class="hero">
+<section class="hero" style="background-image:url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1600&q=85');">
+  <div>
     <p class="eyebrow">OXFORD NHÀ BÈ COMMUNITY</p>
-    <h1>Cộng đồng sinh viên</h1>
+    <h1>Cộng đồng <span class="hl-gold">sinh viên</span></h1>
     <p>Nơi học sinh và sinh viên Oxford Nhà Bè chia sẻ kiến thức, hoạt động, kinh nghiệm học tập và kết nối với nhau.</p>
-  </section>
+  </div>
+</section>
 
+<main class="container">
   <section class="toolbar">
     <input id="search" placeholder="Tìm kiếm bài viết hoặc nội dung...">
     <select id="category">
@@ -69,6 +78,7 @@
     </form>
   </section>
 </main>
+  <script src="../js/hamburger.js"></script>
 <script src="../js/cong-dong.js"></script>
 </body>
 </html>

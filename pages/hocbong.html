@@ -11,15 +11,27 @@
 </head>
 <body>
 <div class="wrap">
-<header class="top"><a class="logo" href="../index.html">OXFORD NHÀ BÈ</a><nav class="nav">
+<header class="top">
+  <a class="logo" href="../index.html">OXFORD NHÀ BÈ</a>
+  <button type="button" class="hb-toggle" aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav hb-menu" id="mainNav">
   <a href="../index.html">Trang chủ</a>
   <a href="./cong-dong.html">Cộng đồng</a>
   <a href="./lienhe.html">Liên hệ</a>
+  <a href="./lienhe.html" class="nav-login-link">Đăng nhập</a>
+  <a href="./lienhe.html" class="btn-signup-gold">Đăng ký</a>
 </nav>
+  <div class="hb-overlay"></div>
 </header>
 
-<section class="hero">
-  <h1 class="hgg font-size: 5rem">Cổng thông tin Học bổng</h1>
+<section class="hero" style="background-image:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=85');">
+  <div>
+    <p class="hero-eyebrow-gold">Trung tâm Học bổng</p>
+    <h1 class="hgg">Cổng thông tin <span class="hl-gold">Học bổng</span></h1>
+    <p style="margin-top:14px;max-width:640px;color:#eaf3f6;font-size:16px;">Tổng hợp đầy đủ các suất học bổng, điều kiện xét duyệt và hướng dẫn nộp hồ sơ dành cho sinh viên Oxford Nhà Bè.</p>
+  </div>
 </section>
 
 <section class="section">
@@ -348,6 +360,7 @@
 
 <footer class="footer">© 2026 Oxford Nhà Bè Scholarship Center. Hệ thống học bổng trên website được xây dựng riêng cho Oxford Nhà Bè, bao gồm tên chương trình, nội dung, tiêu chí và quy trình hiển thị. Các mức hỗ trợ và chỉ tiêu thực tế sẽ được áp dụng theo thông báo chính thức của nhà trường.</footer>
 </div>
+  <script src="./js/hamburger.js"></script>
 <script>
 const search=document.getElementById('search');
 const cards=[...document.querySelectorAll('#scholarshipGrid .card')];
@@ -464,4 +477,5 @@ const saved=JSON.parse(localStorage.getItem(draftKey)||'null');
 if(saved)fillForm(saved);
 renderApplications();
 </script>
+<script src="../js/hamburger.js"></script>
 </body>
