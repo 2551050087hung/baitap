@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cộng đồng | Oxford Nhà Bè</title>
+<link rel="stylesheet" href="./output.css">
+<link rel="stylesheet" href="./community.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="community-page">
+<header class="community-topbar">
+  <a href="./index.html" class="community-brand"><span class="brand-mark">ONB</span><span>OXFORD NHÀ BÈ</span></a>
+  <nav>
+    <a href="./index.html">Trang chủ</a><a href="./pages/nganhhoc.html">Ngành học</a><a href="./pages/nghiencuu.html">Nghiên cứu</a><a class="scholarship-link" href="./pages/hocbong.html">Học bổng</a><a href="./pages/lienhe.html">Liên hệ</a><a class="active" href="./community.html">Cộng đồng</a>
+  </nav>
+  <div class="top-actions"><button id="globalSearch" title="Tìm kiếm">⌕</button><button id="notifications" title="Thông báo">🔔<i id="notificationDot"></i></button><button class="profile-mini" id="openProfile"><span id="topAvatar">😎</span><span id="topName">Gia Huy</span></button></div>
+</header>
+
+<main class="discord-app">
+  <aside class="server-rail" id="serverRail">
+    <button class="server-icon home active" data-server="onb" title="Oxford Nhà Bè">ONB</button>
+    <div class="rail-separator"></div>
+    <div id="customServers"></div>
+    <button class="server-icon add-server" id="createServer" title="Tạo cộng đồng">＋</button>
+  </aside>
+
+  <aside class="channel-sidebar">
+    <div class="server-header">
+      <div><strong id="serverName">Oxford Nhà Bè</strong><small id="serverMemberCount">1,248 thành viên</small></div>
+      <button id="serverMenu" title="Quản lý cộng đồng">⌄</button>
+    </div>
+    <div class="channel-search"><span>⌕</span><input id="channelSearch" placeholder="Tìm kênh"></div>
+    <div class="quick-actions"><button id="schoolHub">🏫 <span>Trung tâm trường</span></button><button id="openFriends">👥 <span>Bạn bè</span></button></div>
+    <div class="channel-list" id="channelList"></div>
+    <div class="user-panel">
+      <button class="user-card" id="openProfile2"><span class="avatar-wrap" id="sideAvatar">😎</span><span><b id="sideName">Gia Huy</b><small><i class="online-dot"></i> Trực tuyến</small></span></button>
+      <button class="icon-btn" id="openShop" title="Cửa hàng">🛍️</button><button class="icon-btn" id="userSettings" title="Cài đặt">⚙</button>
+    </div>
+  </aside>
+
+  <section class="chat-area">
+    <div class="chat-topbar">
+      <div class="channel-heading"><div class="channel-title"><span id="channelIcon">#</span><b id="currentChannel">phòng-chung</b><span class="channel-badge" id="channelBadge"></span></div><p id="channelTopic">Nơi sinh viên Oxford Nhà Bè giao lưu và giúp đỡ nhau.</p></div>
+      <div class="chat-actions"><button id="openThreads" title="Thread">💬</button><button id="openMembers" title="Thành viên">👥</button><button id="openPins" title="Ghim">📌</button><button id="openSearch" title="Tìm kiếm">🔍</button></div>
+    </div>
+    <div class="notice"><b id="noticeTitle">💡 Cộng đồng học tập</b><span id="noticeText">Chia sẻ văn minh, tôn trọng thành viên và cùng nhau nhận điểm ONB.</span><button id="dismissNotice">×</button></div>
+    <div class="messages" id="messages"></div>
+    <form class="composer" id="messageForm">
+      <button type="button" class="composer-plus" id="attachBtn" title="Tải ảnh/tệp">＋</button>
+      <input id="messageInput" autocomplete="off" maxlength="2000" placeholder="Nhắn #phòng-chung">
+      <button type="button" id="gifBtn" title="GIF">GIF</button><button type="button" id="emojiBtn" title="Cảm xúc">☺</button><button class="send-btn" type="submit">➤</button>
+    </form>
+    <input id="fileInput" type="file" hidden accept="image/*,.pdf,.doc,.docx,.ppt,.pptx,.txt">
+    <div class="typing" id="typingIndicator"></div>
+  </section>
+
+  <aside class="member-sidebar" id="memberSidebar">
+    <div class="member-head"><b>Thành viên — <span id="memberTotal">0</span></b><button id="closeMembers">×</button></div>
+    <div class="member-search"><input id="memberSearch" placeholder="Tìm thành viên"></div>
+    <div class="member-section"><span>TRỰC TUYẾN — <span id="onlineCount">6</span></span><div id="memberList"></div></div>
+    <button class="add-member-btn" id="addMember">＋ Mời thành viên</button>
+  </aside>
+</main>
+
+<div class="bottom-mobile-nav"><button data-panel="channels">☰<small>Kênh</small></button><button class="selected" data-panel="chat">💬<small>Chat</small></button><button data-panel="members">👥<small>Thành viên</small></button><button id="mobileShop">🛍️<small>Shop</small></button></div>
+
+<!-- Profile -->
+<div class="modal" id="profileModal"><div class="modal-card profile-card"><button class="modal-close">×</button><div class="profile-cover" id="profileCover"></div><div class="profile-main"><div class="profile-avatar" id="profileAvatar">😎</div><div class="profile-title-row"><div><h2 id="profileTitle">Gia Huy</h2><p class="muted" id="profileBio">Sinh viên · Thành viên Oxford Nhà Bè</p></div><button class="primary-btn" id="editProfile">Chỉnh sửa hồ sơ</button></div><div class="profile-stats"><span>⭐ <b id="pointsValue">500</b><small>Điểm ONB</small></span><span>💬 <b id="messageStat">0</b><small>Tin nhắn</small></span><span>🏆 <b id="badgeStat">3</b><small>Huy hiệu</small></span></div><div class="profile-tabs"><button class="selected" data-tab="overview">Hồ sơ</button><button data-tab="files">CV & bằng cấp</button><button data-tab="customize">Trang trí</button><button data-tab="missions">Nhiệm vụ</button></div><div id="overviewTab"></div><div id="filesTab" class="hidden"></div><div id="customizeTab" class="hidden"></div><div id="missionsTab" class="hidden"></div></div></div></div>
+
+<!-- Shop -->
+<div class="modal" id="shopModal"><div class="modal-card shop-card"><button class="modal-close">×</button><div class="modal-title"><div><p class="eyebrow">ONB STORE</p><h2>Cửa hàng cộng đồng</h2></div><strong>⭐ <span id="shopPoints">500</span></strong></div><p class="muted">Dùng điểm nhận được từ hoạt động cộng đồng để mua khung avatar, nền hồ sơ và huy hiệu.</p><div class="shop-grid" id="shopGrid"></div></div></div>
+
+<!-- Attachments/profile files -->
+<div class="modal" id="uploadModal"><div class="modal-card action-card"><button class="modal-close">×</button><div id="uploadContent"></div></div></div>
+
+<!-- Generic -->
+<div class="modal" id="actionModal"><div class="modal-card action-card"><button class="modal-close">×</button><div id="actionContent"></div></div></div>
+
+<!-- Emoji picker -->
+<div class="emoji-pop" id="emojiPop"><div class="emoji-tabs">😀 <span>❤️</span> <span>🎓</span> <span>🎮</span> <span>🔥</span></div><div id="emojiGrid"></div></div>
+
+<!-- Toast -->
+<div class="toast-stack" id="toastStack"></div>
+<script src="./community.js"></script>
+</body>
+</html>

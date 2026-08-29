@@ -1,7 +1,7 @@
 {
-  "name": "baitap",
+  "name": "tkw_2551050087_hung-2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Màu thương hiệu\r Màu chủ đạo của website là xanh dương",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,20 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/2551050087hung/baitap.git"
+    "url": "git+https://github.com/2551050087hung/tkw_2551050087_hung-2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/2551050087hung/baitap/issues"
+    "url": "https://github.com/2551050087hung/tkw_2551050087_hung-2/issues"
   },
-  "homepage": "https://github.com/2551050087hung/baitap#readme",
-  "dependencies": {
-    "tailwind": "^4.0.0"
-  },
+  "homepage": "https://github.com/2551050087hung/tkw_2551050087_hung-2#readme",
   "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
   }
 }
