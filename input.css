@@ -677,6 +677,10 @@ footer strong {
       gap: 25px;
       flex-wrap: wrap;
     }
+    .hgg {
+  width: 100%;
+  text-align: center;
+    }
 
     .footer p {
       color: #cbd2d4;
