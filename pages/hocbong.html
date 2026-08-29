@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Học bổng Oxford Nhà Bè | Trung tâm Học bổng</title>
+<link rel="stylesheet" href="../output.css">
+<style>
+:root{--blue:#087fa3;--blue2:#0aa3cf;--ink:#173047;--muted:#647487;--bg:#f5f9fb;--line:#dce7ed;--gold:#e3a923}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg)}a{text-decoration:none;color:inherit}.wrap{max-width:1180px;margin:auto;padding:0 22px 55px}.top{height:74px;display:flex;align-items:center;justify-content:space-between;background:#fff}.logo{font-size:25px;font-weight:900;letter-spacing:.5px;color:var(--blue)}.nav{display:flex;gap:25px;align-items:center}.nav a{font-size:14px;font-weight:700;color:#22364a}.nav a.active{color:var(--blue)}
+.hero{margin-top:22px;border-radius:20px;background:linear-gradient(120deg,#e7f7fc,#fff);border:1px solid #d7eaf0;padding:38px 40px;position:relative;overflow:hidden}.hero:after{content:'🎓';position:absolute;right:45px;bottom:-18px;font-size:110px;opacity:.12}.eyebrow{font-size:12px;font-weight:800;letter-spacing:1.2px;color:var(--blue)}h1{font-size:42px;margin:8px 0 12px}.hero p{max-width:820px;color:var(--muted);line-height:1.75;margin:0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}.stat{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px}.stat b{display:block;font-size:23px}.stat span{font-size:12px;color:var(--muted)}
+.section{margin-top:30px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:14px}.section h2{margin:0;font-size:25px}.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}.tools{display:flex;gap:10px;flex-wrap:wrap}.search{width:260px;border:1px solid var(--line);border-radius:9px;padding:10px 12px;background:#fff}.filters button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 13px;cursor:pointer;color:#536477}.filters button.active{background:#e6f6fa;color:var(--blue);border-color:#a8dbe7;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 5px 20px #183c4d08}.card-top{display:flex;justify-content:space-between;gap:10px}.icon{width:42px;height:42px;border-radius:12px;background:#e8f7fb;display:grid;place-items:center;font-size:22px}.tag{font-size:10px;font-weight:800;color:var(--blue);background:#eef9fb;padding:6px 9px;border-radius:999px;height:max-content}.card h3{font-size:18px;margin:14px 0 8px}.card p,.card li{font-size:13px;line-height:1.65;color:var(--muted)}.card ul{padding-left:18px}.deadline{margin:12px 0;background:#fff8e7;border-left:4px solid var(--gold);padding:9px 11px;border-radius:7px;font-size:12px;color:#6d5726}.btn{display:inline-block;margin-top:5px;padding:10px 13px;border-radius:8px;background:var(--blue);color:white;font-size:12px;font-weight:800}.btn.alt{background:#eef7fa;color:var(--blue)}
+.notice{display:grid;grid-template-columns:1fr 1fr;gap:12px}.notice-item{background:#fff;border:1px solid var(--line);padding:17px;border-radius:12px}.notice-item .date{font-size:11px;color:#8a98a6}.notice-item h3{font-size:15px;margin:7px 0}.notice-item p{font-size:12px;line-height:1.6;color:var(--muted);margin:0}.notice-item a{display:inline-block;margin-top:9px;color:var(--blue);font-size:12px;font-weight:700}
+.guide{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px}.step b{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--blue);color:white;font-size:12px}.step h3{font-size:14px}.step p{font-size:12px;color:var(--muted);line-height:1.6}.source{background:#102f3b;color:#e8f7fa;border-radius:16px;padding:24px}.source p{color:#b8ced4;font-size:13px;line-height:1.7}.source a{color:#6de0ff;font-weight:700}.footer{border-top:1px solid var(--line);margin-top:32px;padding-top:18px;color:#758395;font-size:11px;line-height:1.7}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.stats,.guide{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.top{height:auto;padding:15px 0;align-items:flex-start;gap:12px}.nav{gap:10px;flex-wrap:wrap;justify-content:flex-end}.nav a{font-size:11px}.hero{padding:26px 22px}.hero h1,h1{font-size:31px}.stats,.grid,.notice,.guide{grid-template-columns:1fr}.search{width:100%}}
+
+.application-panel{margin-top:30px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 28px #183c4d0b}
+.application-panel h2{margin:0 0 6px}.application-panel .sub{margin:0 0 18px;color:var(--muted);font-size:13px;line-height:1.6}
+.app-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800;color:#344b5e}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:11px 12px;background:#fff;font:inherit;color:var(--ink)}.field textarea{min-height:100px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #bfe9f2;border-color:var(--blue)}
+.profile-choice{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.profile-choice label{border:1px solid var(--line);border-radius:11px;padding:12px;cursor:pointer;background:#fbfdfe}.profile-choice input{margin-right:7px}.profile-choice label:has(input:checked){border-color:#8bd0df;background:#effafd}
+.file-box{border:1px dashed #b8ccd5;border-radius:10px;padding:12px;background:#fbfdfe}.file-box small{display:block;color:var(--muted);margin-top:5px}
+.form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.btn.secondary{background:#eef7fa;color:var(--blue);border:1px solid #d5e9ee;cursor:pointer}.status{margin-top:14px;padding:12px;border-radius:9px;font-size:12px;line-height:1.6;display:none}.status.show{display:block;background:#eef9f5;border:1px solid #c6eadc;color:#176449}.application-list{margin-top:18px;display:grid;gap:9px}.application-item{border:1px solid var(--line);border-radius:10px;padding:12px;background:#fbfdfe;display:flex;justify-content:space-between;gap:15px;align-items:center}.application-item b{font-size:13px}.application-item span{font-size:11px;color:var(--muted)}.empty{color:var(--muted);font-size:12px}
+@media(max-width:650px){.app-grid,.profile-choice{grid-template-columns:1fr}.field.full{grid-column:auto}.application-item{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a class="logo" href="../index.html">OXFORD NHÀ BÈ</a><nav class="nav"><a href="../index.html">Trang chủ</a><a href="./nganhhoc.html">Ngành học</a><a href="./nghiencuu.html">Nghiên cứu</a><a class="active" href="./hocbong.html">Học bổng</a><a href="../community.html">Cộng đồng</a><a href="./lienhe.html">Liên hệ</a></nav></header>
+
+<section class="hero"><div class="eyebrow">OXFORD NHÀ BÈ • SCHOLARSHIP CENTER</div><h1>Cổng thông tin Học bổng</h1><p>Đây là cổng học bổng do Oxford Nhà Bè xây dựng dành riêng cho sinh viên của trường. Sinh viên có thể tìm hiểu các chương trình hỗ trợ học phí, khuyến khích học tập, tài năng, hoàn cảnh khó khăn và phát triển cá nhân theo chính sách học bổng riêng của Oxford Nhà Bè.</p><div class="stats"><div class="stat"><b>08+</b><span>Nhóm học bổng</span></div><div class="stat"><b>24/7</b><span>Tra cứu thông tin</span></div><div class="stat"><b>01</b><span>Hồ sơ sinh viên</span></div><div class="stat"><b>ONB</b><span>Điểm hoạt động cộng đồng</span></div></div></section>
+
+<section class="section"><div class="section-head"><div><h2>Danh mục học bổng</h2><p>Chọn nhóm phù hợp để xem nhanh điều kiện và hướng chuẩn bị.</p></div><div class="tools"><input id="search" class="search" placeholder="🔎 Tìm học bổng..."></div></div><div class="filters" style="margin-bottom:14px"><button class="active" data-filter="all">Tất cả</button> <button data-filter="tuyensinh">Tuyển sinh</button> <button data-filter="hoc-tap">Học tập</button> <button data-filter="hoan-canh">Hoàn cảnh</button> <button data-filter="tai-nang">Tài năng</button> <button data-filter="quoc-te">Quốc tế</button></div>
+<div id="scholarshipGrid" class="grid">
+<article class="card" data-type="tuyensinh" data-search="tuyen sinh thu khoa khuyen khich"><div class="card-top"><div class="icon">🏫</div><span class="tag">TUYỂN SINH</span></div><h3>Học bổng Tân sinh viên Oxford Nhà Bè</h3><p>Dành cho tân sinh viên Oxford Nhà Bè có thành tích học tập, hoạt động hoặc năng lực nổi bật trong quá trình xét tuyển.</p><ul><li>Ưu tiên thành tích học tập và hoạt động.</li><li>Xét theo kế hoạch tuyển sinh và chỉ tiêu học bổng của Oxford Nhà Bè từng năm.</li><li>Hồ sơ gồm bảng điểm và minh chứng.</li></ul><a class="btn apply-btn" href="#nop-ho-so" data-scholarship="Học bổng Tân sinh viên Oxford Nhà Bè">Nộp hồ sơ →</a></article>
+<article class="card" data-type="hoc-tap" data-search="khuyen khich hoc tap diem gpa"><div class="card-top"><div class="icon">📚</div><span class="tag">HỌC TẬP</span></div><h3>Học bổng Khuyến khích học tập</h3><p>Ghi nhận sinh viên Oxford Nhà Bè duy trì kết quả học tập tốt và có đóng góp tích cực cho môi trường học tập của trường.</p><ul><li>Xét theo từng học kỳ dựa trên tiêu chí do Oxford Nhà Bè quy định.</li><li>Căn cứ kết quả học tập và tiêu chí rèn luyện.</li><li>Công bố danh sách sau mỗi đợt xét.</li></ul><a class="btn apply-btn" href="#nop-ho-so" data-scholarship="Học bổng Khuyến khích học tập">Nộp hồ sơ →</a></article>
+<article class="card" data-type="hoan-canh" data-search="vuot kho hoan canh kho khan tiep suc"><div class="card-top"><div class="icon">🤝</div><span class="tag">HỖ TRỢ</span></div><h3>Học bổng Vượt khó</h3><p>Hỗ trợ sinh viên Oxford Nhà Bè gặp khó khăn về tài chính nhưng vẫn duy trì việc học và có ý thức vươn lên.</p><ul><li>Có minh chứng hoàn cảnh.</li><li>Đánh giá kết quả học tập.</li><li>Ưu tiên trường hợp cần hỗ trợ thực tế.</li></ul><a class="btn apply-btn" href="#nop-ho-so" data-scholarship="Học bổng Vượt khó">Nộp hồ sơ →</a></article>
+<article class="card" data-type="tai-nang" data-search="tai nang nghien cuu sang tao cuoc thi"><div class="card-top"><div class="icon">🏆</div><span class="tag">TÀI NĂNG</span></div><h3>Học bổng Tài năng Oxford Nhà Bè</h3><p>Dành cho sinh viên Oxford Nhà Bè có thành tích nổi bật trong học thuật, nghiên cứu, cuộc thi, văn hóa, thể thao hoặc các dự án sáng tạo.</p><ul><li>Chấp nhận nhiều loại minh chứng.</li><li>Portfolio được khuyến khích.</li><li>Có thể kết hợp hồ sơ cộng đồng.</li></ul><a class="btn apply-btn" href="#nop-ho-so" data-scholarship="Học bổng Tài năng Oxford Nhà Bè">Nộp hồ sơ →</a></article>
+<article class="card" data-type="hoc-tap" data-search="ngoai ngu tieng anh tieng nhat chung chi"><div class="card-top"><div class="icon">🌐</div><span class="tag">NGOẠI NGỮ</span></div><h3>Học bổng Năng lực Ngoại ngữ</h3><p>Khuyến khích sinh viên Oxford Nhà Bè có năng lực ngoại ngữ tốt và sử dụng ngoại ngữ hiệu quả trong học tập, nghiên cứu và hoạt động chuyên môn.</p><ul><li>Chứng chỉ ngoại ngữ được Oxford Nhà Bè công nhận theo từng đợt xét.</li><li>Cần minh chứng còn hiệu lực.</li><li>Mức hỗ trợ tùy quy định từng đợt.</li></ul><a class="btn apply-btn" href="#nop-ho-so" data-scholarship="Học bổng Năng lực Ngoại ngữ">Nộp hồ sơ →</a></article>
+<article class="card" data-type="quoc-te" data-search="trao doi quoc te du hoc exchange"><div class="card-top"><div class="icon">✈️</div><span class="tag">QUỐC TẾ</span></div><h3>Học bổng Trao đổi & Quốc tế</h3><p>Hỗ trợ sinh viên Oxford Nhà Bè tham gia các chương trình học thuật, giao lưu, trao đổi hoặc hoạt động quốc tế được trường phê duyệt.</p><ul><li>CV học thuật và thư giới thiệu.</li><li>Kế hoạch học tập.</li><li>Minh chứng ngoại ngữ theo chương trình.</li></ul><a class="btn apply-btn" href="#nop-ho-so" data-scholarship="Học bổng Trao đổi & Quốc tế">Nộp hồ sơ →</a></article>
+<article class="card" data-type="tai-nang" data-search="nghien cuu khoa hoc sinh vien de tai"><div class="card-top"><div class="icon">🔬</div><span class="tag">NGHIÊN CỨU</span></div><h3>Học bổng Nghiên cứu sinh viên</h3><p>Khuyến khích sinh viên Oxford Nhà Bè thực hiện đề tài nghiên cứu, dự án ứng dụng và sản phẩm học thuật có giá trị cho nhà trường hoặc cộng đồng.</p><ul><li>Đề cương hoặc báo cáo đề tài.</li><li>Minh chứng giải thưởng nếu có.</li><li>Ưu tiên sản phẩm có kết quả rõ ràng.</li></ul><a class="btn apply-btn" href="#nop-ho-so" data-scholarship="Học bổng Nghiên cứu sinh viên">Nộp hồ sơ →</a></article>
+<article class="card" data-type="hoan-canh" data-search="tiep suc dot xuat tai nan thien tai"><div class="card-top"><div class="icon">💙</div><span class="tag">TIẾP SỨC</span></div><h3>Học bổng Tiếp sức sinh viên</h3><p>Hỗ trợ sinh viên Oxford Nhà Bè gặp hoàn cảnh phát sinh bất ngờ có ảnh hưởng trực tiếp đến khả năng tiếp tục học tập.</p><ul><li>Tiếp nhận theo thông báo từng đợt.</li><li>Cần giấy tờ xác nhận phù hợp.</li><li>Ưu tiên hồ sơ cần hỗ trợ khẩn cấp.</li></ul><a class="btn apply-btn" href="#nop-ho-so" data-scholarship="Học bổng Tiếp sức sinh viên">Nộp hồ sơ →</a></article>
+</div></section>
+
+<section id="thong-bao" class="section"><div class="section-head"><div><h2>Thông báo học bổng</h2><p>Khu vực dành cho thông báo chính thức của Oxford Nhà Bè.</p></div></div><div class="notice"><article class="notice-item"><span class="date">THÔNG BÁO • 2026</span><h3>Mở đợt tiếp nhận hồ sơ học bổng học kỳ</h3><p>Thông tin về đối tượng, số lượng suất, hồ sơ, thời gian nộp và cách theo dõi kết quả sẽ được cập nhật tại đây.</p><a href="#quy-trinh">Xem hướng dẫn →</a></article><article class="notice-item"><span class="date">CẬP NHẬT • 2026</span><h3>Danh sách kết quả xét học bổng</h3><p>Oxford Nhà Bè có thể công bố kết quả theo mã sinh viên hoặc tài khoản cá nhân để bảo vệ thông tin riêng tư.</p><a href="#nguon">Xem nguyên tắc công bố →</a></article><article class="notice-item"><span class="date">NHẮC HỒ SƠ</span><h3>Kiểm tra deadline trước khi gửi</h3><p>Hồ sơ trễ hạn, thiếu minh chứng hoặc sai định dạng có thể không được tiếp nhận tùy từng chương trình.</p><a href="#huong-dan">Checklist hồ sơ →</a></article><article class="notice-item"><span class="date">CỘNG ĐỒNG</span><h3>Kênh hỏi đáp học bổng trên Oxford Community</h3><p>Thảo luận kinh nghiệm chuẩn bị CV, portfolio, bài luận và chia sẻ cơ hội học bổng với sinh viên khác.</p><a href="../community.html">Vào Cộng đồng →</a></article></div></section>
+
+
+<section id="nop-ho-so" class="section application-panel">
+  <h2>📝 Nộp hồ sơ học bổng</h2>
+  <p class="sub">Học sinh/sinh viên chọn đúng loại hồ sơ, điền thông tin và tải minh chứng. Dữ liệu của biểu mẫu được lưu trên trình duyệt này để có thể tiếp tục chỉnh sửa trước khi gửi.</p>
+
+  <form id="scholarshipForm">
+    <div class="app-grid">
+      <div class="field">
+        <label for="scholarshipSelect">1. Chọn học bổng *</label>
+        <select id="scholarshipSelect" required>
+          <option value="">-- Chọn chương trình --</option>
+          <option>Học bổng Tân sinh viên Oxford Nhà Bè</option>
+          <option>Học bổng Khuyến khích học tập</option>
+          <option>Học bổng Vượt khó</option>
+          <option>Học bổng Tài năng Oxford Nhà Bè</option>
+          <option>Học bổng Năng lực Ngoại ngữ</option>
+          <option>Học bổng Trao đổi & Quốc tế</option>
+          <option>Học bổng Nghiên cứu sinh viên</option>
+          <option>Học bổng Tiếp sức sinh viên</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="applicationType">2. Kiểu hồ sơ *</label>
+        <select id="applicationType" required>
+          <option value="">-- Chọn kiểu hồ sơ --</option>
+          <option value="tan-sinh-vien">Hồ sơ tân sinh viên</option>
+          <option value="hoc-tap">Hồ sơ thành tích học tập</option>
+          <option value="tai-nang">Hồ sơ tài năng / thành tích</option>
+          <option value="hoan-canh">Hồ sơ hoàn cảnh khó khăn</option>
+          <option value="ngoai-ngu">Hồ sơ năng lực ngoại ngữ</option>
+          <option value="nghien-cuu">Hồ sơ nghiên cứu / dự án</option>
+          <option value="quoc-te">Hồ sơ trao đổi / quốc tế</option>
+          <option value="tiep-suc">Hồ sơ hỗ trợ khẩn cấp</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="studentName">Họ và tên *</label>
+        <input id="studentName" required placeholder="Nhập họ và tên">
+      </div>
+      <div class="field">
+        <label for="studentId">Mã học sinh / sinh viên *</label>
+        <input id="studentId" required placeholder="Ví dụ: ONB20260001">
+      </div>
+      <div class="field">
+        <label for="studentEmail">Email *</label>
+        <input id="studentEmail" type="email" required placeholder="email@oxfordnhabe.edu.vn">
+      </div>
+      <div class="field">
+        <label for="studentPhone">Số điện thoại</label>
+        <input id="studentPhone" type="tel" placeholder="Nhập số điện thoại">
+      </div>
+
+      <div class="field full">
+        <label>3. Đối tượng hồ sơ</label>
+        <div class="profile-choice">
+          <label><input type="radio" name="profile" value="học sinh" checked> Học sinh</label>
+          <label><input type="radio" name="profile" value="sinh viên"> Sinh viên</label>
+          <label><input type="radio" name="profile" value="tân sinh viên"> Tân sinh viên</label>
+        </div>
+      </div>
+
+      <div class="field full">
+        <label for="motivation">Lý do xin học bổng / mục tiêu *</label>
+        <textarea id="motivation" required placeholder="Viết ngắn gọn hoàn cảnh, thành tích, mục tiêu học tập hoặc lý do bạn phù hợp với học bổng..."></textarea>
+      </div>
+
+      <div class="field">
+        <label for="transcript">Bảng điểm / kết quả học tập</label>
+        <div class="file-box"><input id="transcript" type="file" accept=".pdf,.jpg,.jpeg,.png"><small>PDF, JPG, PNG</small></div>
+      </div>
+      <div class="field">
+        <label for="evidence">Minh chứng thành tích / hoàn cảnh</label>
+        <div class="file-box"><input id="evidence" type="file" accept=".pdf,.jpg,.jpeg,.png"><small>PDF, JPG, PNG</small></div>
+      </div>
+      <div class="field">
+        <label for="portfolio">CV / Portfolio</label>
+        <div class="file-box"><input id="portfolio" type="file" accept=".pdf,.jpg,.jpeg,.png"><small>Không bắt buộc với mọi chương trình</small></div>
+      </div>
+      <div class="field">
+        <label for="certificate">Chứng chỉ liên quan</label>
+        <div class="file-box"><input id="certificate" type="file" accept=".pdf,.jpg,.jpeg,.png"><small>Ví dụ: ngoại ngữ, giải thưởng...</small></div>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button class="btn secondary" type="button" id="saveDraft">💾 Lưu hồ sơ nháp</button>
+      <button class="btn" type="submit">📤 Gửi hồ sơ học bổng</button>
+      <button class="btn secondary" type="button" id="clearDraft">Xóa dữ liệu nháp</button>
+    </div>
+    <div id="formStatus" class="status"></div>
+  </form>
+
+  <div class="application-list">
+    <h3 style="margin:12px 0 0">Hồ sơ đã tạo trên thiết bị này</h3>
+    <div id="applicationList" class="empty">Chưa có hồ sơ nào.</div>
+  </div>
+</section>
+
+<section id="quy-trinh" class="section"><div class="section-head"><div><h2>Quy trình nộp hồ sơ</h2><p>Một quy trình thống nhất để sinh viên dễ theo dõi.</p></div></div><div class="guide"><div class="step"><b>1</b><h3>Chọn học bổng</h3><p>Đọc kỹ đối tượng, điều kiện, mức hỗ trợ và thời hạn.</p></div><div class="step"><b>2</b><h3>Chuẩn bị hồ sơ</h3><p>CV, bảng điểm, chứng chỉ, bài luận và minh chứng liên quan.</p></div><div class="step"><b>3</b><h3>Nộp hồ sơ</h3><p>Thực hiện theo cổng trực tuyến hoặc địa điểm được thông báo.</p></div><div class="step"><b>4</b><h3>Theo dõi kết quả</h3><p>Kiểm tra tài khoản, email và mục Thông báo học bổng.</p></div></div></section>
+
+<section id="huong-dan" class="section"><div class="section-head"><div><h2>Checklist hồ sơ</h2><p>Chuẩn bị trước để không bị thiếu giấy tờ.</p></div></div><div class="card"><div class="grid" style="grid-template-columns:repeat(2,1fr)"><ul><li>CV học tập và hoạt động.</li><li>Bảng điểm / kết quả học tập.</li><li>Giấy xác nhận sinh viên nếu cần.</li><li>Chứng chỉ ngoại ngữ.</li></ul><ul><li>Thư giới thiệu.</li><li>Bài luận cá nhân / kế hoạch học tập.</li><li>Portfolio, đề tài, giải thưởng.</li><li>Minh chứng hoàn cảnh nếu thuộc diện hỗ trợ.</li></ul></div><p class="deadline">Mẹo: lưu CV, bằng cấp, chứng chỉ và portfolio trong <b>Profile → CV & bằng cấp</b> của Oxford Community để tái sử dụng khi mở hồ sơ.</p></div></section>
+
+<section id="nguon" class="section"><div class="source"><h2>Chính sách học bổng Oxford Nhà Bè</h2><p>Toàn bộ nội dung trên trang này được xây dựng riêng cho hệ thống học bổng của Oxford Nhà Bè. Nhà trường chủ động xác định tên chương trình, đối tượng xét, tiêu chí, mức hỗ trợ, chỉ tiêu và thời gian tiếp nhận hồ sơ phù hợp với từng năm học.</p><p>Mỗi chương trình học bổng sẽ có thông báo riêng của Oxford Nhà Bè. Sinh viên cần đọc thông báo, chuẩn bị đúng minh chứng và nộp hồ sơ theo thời hạn được nhà trường công bố.</p><p>Thông tin về kết quả xét học bổng được cập nhật trên các kênh chính thức của Oxford Nhà Bè. Những nội dung chưa có thông báo chính thức chỉ được xem là thông tin tham khảo trên website.</p></div></section>
+
+<footer class="footer">© 2026 Oxford Nhà Bè Scholarship Center. Hệ thống học bổng trên website được xây dựng riêng cho Oxford Nhà Bè, bao gồm tên chương trình, nội dung, tiêu chí và quy trình hiển thị. Các mức hỗ trợ và chỉ tiêu thực tế sẽ được áp dụng theo thông báo chính thức của nhà trường.</footer>
+</div>
+<script>
+const search=document.getElementById('search');
+const cards=[...document.querySelectorAll('#scholarshipGrid .card')];
+const buttons=[...document.querySelectorAll('.filters button')];
+let filter='all';
+
+function render(){
+  const q=(search.value||'').toLowerCase().trim();
+  cards.forEach(c=>{
+    const ok=(filter==='all'||c.dataset.type===filter)&&(!q||(c.dataset.search+' '+c.innerText).toLowerCase().includes(q));
+    c.style.display=ok?'block':'none';
+  });
+}
+search.addEventListener('input',render);
+buttons.forEach(b=>b.addEventListener('click',()=>{
+  buttons.forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  filter=b.dataset.filter;
+  render();
+}));
+
+// Scholarship application functions.
+const form=document.getElementById('scholarshipForm');
+const scholarshipSelect=document.getElementById('scholarshipSelect');
+const applicationType=document.getElementById('applicationType');
+const statusBox=document.getElementById('formStatus');
+const listBox=document.getElementById('applicationList');
+const draftKey='oxford_nhabe_scholarship_draft';
+const applicationsKey='oxford_nhabe_scholarship_applications';
+
+function showStatus(message){
+  statusBox.textContent=message;
+  statusBox.classList.add('show');
+}
+
+function formDataObject(){
+  return {
+    scholarship:scholarshipSelect.value,
+    type:applicationType.value,
+    name:document.getElementById('studentName').value.trim(),
+    id:document.getElementById('studentId').value.trim(),
+    email:document.getElementById('studentEmail').value.trim(),
+    phone:document.getElementById('studentPhone').value.trim(),
+    profile:(document.querySelector('input[name="profile"]:checked')||{}).value||'',
+    motivation:document.getElementById('motivation').value.trim(),
+    updatedAt:new Date().toLocaleString('vi-VN')
+  };
+}
+
+function fillForm(d){
+  if(!d)return;
+  scholarshipSelect.value=d.scholarship||'';
+  applicationType.value=d.type||'';
+  document.getElementById('studentName').value=d.name||'';
+  document.getElementById('studentId').value=d.id||'';
+  document.getElementById('studentEmail').value=d.email||'';
+  document.getElementById('studentPhone').value=d.phone||'';
+  document.getElementById('motivation').value=d.motivation||'';
+  document.querySelectorAll('input[name="profile"]').forEach(r=>r.checked=r.value===d.profile);
+}
+
+function renderApplications(){
+  const apps=JSON.parse(localStorage.getItem(applicationsKey)||'[]');
+  if(!apps.length){
+    listBox.innerHTML='<div class="empty">Chưa có hồ sơ nào. Hãy chọn học bổng và bắt đầu hồ sơ.</div>';
+    return;
+  }
+  listBox.innerHTML=apps.map(a=>`
+    <div class="application-item">
+      <div><b>${a.scholarship}</b><br><span>${a.name} • ${a.id} • ${a.typeLabel}</span></div>
+      <div><span>Trạng thái: <b>Đã gửi</b><br>${a.submittedAt}</span></div>
+    </div>`).join('');
+}
+
+document.querySelectorAll('.apply-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    scholarshipSelect.value=btn.dataset.scholarship||'';
+    document.getElementById('nop-ho-so').scrollIntoView({behavior:'smooth'});
+  });
+});
+
+document.getElementById('saveDraft').addEventListener('click',()=>{
+  const d=formDataObject();
+  localStorage.setItem(draftKey,JSON.stringify(d));
+  showStatus('✅ Đã lưu hồ sơ nháp trên trình duyệt. Bạn có thể quay lại chỉnh sửa và gửi sau.');
+});
+
+document.getElementById('clearDraft').addEventListener('click',()=>{
+  localStorage.removeItem(draftKey);
+  form.reset();
+  document.querySelector('input[name="profile"][value="học sinh"]').checked=true;
+  showStatus('🗑️ Đã xóa hồ sơ nháp trên thiết bị này.');
+});
+
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  if(!form.checkValidity()){form.reportValidity();return;}
+  const d=formDataObject();
+  const apps=JSON.parse(localStorage.getItem(applicationsKey)||'[]');
+  const code='ONB-'+Date.now().toString().slice(-8);
+  apps.unshift({
+    ...d,
+    code,
+    typeLabel:applicationType.options[applicationType.selectedIndex].text,
+    submittedAt:new Date().toLocaleString('vi-VN')
+  });
+  localStorage.setItem(applicationsKey,JSON.stringify(apps));
+  localStorage.removeItem(draftKey);
+  showStatus('🎉 Gửi hồ sơ thành công trên bản demo! Mã hồ sơ của bạn: '+code+'. Hệ thống thật cần kết nối máy chủ để cán bộ Oxford Nhà Bè tiếp nhận và xét duyệt hồ sơ.');
+  renderApplications();
+});
+
+const saved=JSON.parse(localStorage.getItem(draftKey)||'null');
+if(saved)fillForm(saved);
+renderApplications();
+</script>
+</body>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cộng đồng Oxford Nhà Bè</title>
+<link rel="stylesheet" href="../css/cong-dong.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#">OXFORD NHÀ BÈ</a>
+  <span class="badge">CỘNG ĐỒNG</span>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <p class="eyebrow">OXFORD NHÀ BÈ COMMUNITY</p>
+    <h1>Cộng đồng sinh viên</h1>
+    <p>Nơi học sinh và sinh viên Oxford Nhà Bè chia sẻ kiến thức, hoạt động, kinh nghiệm học tập và kết nối với nhau.</p>
+  </section>
+
+  <section class="toolbar">
+    <input id="search" placeholder="Tìm kiếm bài viết hoặc nội dung...">
+    <select id="category">
+      <option value="all">Tất cả chủ đề</option>
+      <option value="hoc-tap">Học tập</option>
+      <option value="su-kien">Sự kiện</option>
+      <option value="clb">CLB & hoạt động</option>
+      <option value="kinh-nghiem">Kinh nghiệm</option>
+    </select>
+    <button id="newPostBtn">+ Đăng bài</button>
+  </section>
+
+  <section id="posts" class="posts"></section>
+
+  <section id="postFormBox" class="panel hidden">
+    <h2>Đăng bài viết</h2>
+    <form id="postForm">
+      <label>Tiêu đề
+        <input id="title" required maxlength="120" placeholder="Nhập tiêu đề">
+      </label>
+      <label>Chủ đề
+        <select id="postCategory" required>
+          <option value="hoc-tap">Học tập</option>
+          <option value="su-kien">Sự kiện</option>
+          <option value="clb">CLB & hoạt động</option>
+          <option value="kinh-nghiem">Kinh nghiệm</option>
+        </select>
+      </label>
+      <label>Nội dung
+        <textarea id="content" required placeholder="Chia sẻ điều bạn muốn nói..."></textarea>
+      </label>
+      <div class="actions">
+        <button type="submit">Đăng bài</button>
+        <button type="button" class="secondary" id="cancelBtn">Hủy</button>
+      </div>
+      <p id="formMsg" class="msg"></p>
+    </form>
+  </section>
+</main>
+<script src="../js/cong-dong.js"></script>
+</body>
+</html>

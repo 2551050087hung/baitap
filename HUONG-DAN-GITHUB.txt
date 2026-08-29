@@ -1,0 +1,10 @@
+Gợi ý commit phần cá nhân:
+
+git checkout -b feature/hocbong-congdong
+git add pages/hocbong.html css/hocbong.css js/hocbong.js
+git add pages/community.html pages/cong-dong.html css/community.css css/cong-dong.css js/community.js js/cong-dong.js js/chat.js
+git add data/scholarships.json data/community.json
+git commit -m "feat: add scholarship and community modules"
+git push -u origin feature/hocbong-congdong
+
+Sau đó tạo Pull Request vào branch chính của nhóm.
